@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('TestStudent') {
             steps {
-                sh 'mvn -Dtest=TestStudent test'
+                bat 'mvn -Dtest=TestStudent test'
             }
         }
         stage('TestStudentVarsta') {
             steps {
-                sh 'mvn -Dtest=TestStudentVarsta test'
+                bat 'mvn -Dtest=TestStudentVarsta test'
             }
         }
 
