@@ -11,7 +11,7 @@ public class TestStudent {
     @Test
     void testIntegralist(){
         Student student = new Student("Gigel",20,5.5);
-        assertEquals(student.areRestanta(), false );
+        assertEquals(student.hasPassedTheYear(), false );
 
     }
 

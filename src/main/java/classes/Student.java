@@ -2,13 +2,13 @@ package classes;
 
 public class Student {
     private String name;
-    private int varsta;
-    private double medie;
+    private int age;
+    private double averageScore;
 
     public Student(String name, int varsta, double medie) {
         this.name = name;
-        this.varsta = varsta;
-        this.medie = medie;
+        this.age = varsta;
+        this.averageScore = medie;
     }
 
     public String getName() {
@@ -19,32 +19,32 @@ public class Student {
         this.name = name;
     }
 
-    public int getVarsta() {
-        return varsta;
+    public int getAge() {
+        return age;
     }
 
-    public void setVarsta(int varsta) {
-        this.varsta = varsta;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public double getMedie() {
-        return medie;
+    public double getAverageScore() {
+        return averageScore;
     }
 
-    public void setMedie(double medie) {
-        this.medie = medie;
+    public void setAverageScore(double averageScore) {
+        this.averageScore = averageScore;
     }
 
-    public boolean areRestanta(){
-        if(medie < 5){
+    public boolean hasPassedTheYear(){
+        if(averageScore < 5){
             return true;
         }
         return false;
     }
 
-    public boolean esteMajor()
+    public boolean hasLegalAge()
     {
-        if(varsta >= 18)
+        if(age >= 18)
         {
             return true;
         }

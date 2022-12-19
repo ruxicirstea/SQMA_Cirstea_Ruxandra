@@ -9,7 +9,7 @@ public class TestStudentVarsta {
     @Test
     void testVarsta(){
         Student student = new Student("Ioana",17,6);
-        assertEquals(student.esteMajor(), false );
+        assertEquals(student.hasLegalAge(), false );
 
     }
 
